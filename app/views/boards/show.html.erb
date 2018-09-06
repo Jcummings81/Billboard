@@ -1,2 +1,6 @@
-<h1>Boards#show</h1>
-<p>Find me in app/views/boards/show.html.erb</p>
+
+<ul>
+  <% @boards.each do |dep| %>
+    <li><%= link_to dep.top_hun_us, dep %></li>
+  <% end %>
+</ul>

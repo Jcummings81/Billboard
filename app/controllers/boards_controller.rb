@@ -1,5 +1,6 @@
 class BoardsController < ApplicationController
-  before_action set_board, only: [:show, :update, :edit, :destroy]
+  before_action :set_board, only: [:show, :update, :edit, :destroy]
+
   def index
     @boards = Board.all
   end
@@ -26,4 +27,5 @@ class BoardsController < ApplicationController
   def board_params
     params.require(:board).permit(:top_hun_us, :top_hun_euro, :top_fif_eng)
   end
+
 end
