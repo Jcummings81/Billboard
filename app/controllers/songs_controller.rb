@@ -22,8 +22,10 @@ class SongsController < ApplicationController
     @song = @board.songs.new(song_params)
 
     if @song.save
+
       redirect_to board_song_path(@board, @song.id)
     else
+  
       render :new
     end
   end
