@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'boards#index'
+  root 'accounts#index'
 
-resources :accounts
+  resources :accounts
+
   resources :boards do
     resources :songs
   end
