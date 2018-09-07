@@ -1,6 +1,7 @@
+<h1><%= @board.id ? 'Edit Board' : 'Create Board' %></h1>
 <hr />
 <%= form_for @board do |f| %>
-  <%= f.label :top_hun_us %>
-  <%= f.text_field :top_hun_us, required: true, autofocus: true %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
   <%= f.submit %>
 <% end %>

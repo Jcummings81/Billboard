@@ -1,13 +1,2 @@
-<h1>Boards#new</h1>
-<%= form_for @board do |f| %>
-    <%= f.label :top_hun_us %>
-    <%= f.text_field :top_hun_us %>
-    
-    <%= f.label :top_hun_euro %>
-    <%= f.text_field :top_hun_euro %>
-
-    <%= f.label :top_fif_eng %>
-    <%= f.text_field :top_fif_eng %>
-    <%= f.submit %>
-<% end %>
-
+<h1>Boards</h1>
+<% render 'form' %>
